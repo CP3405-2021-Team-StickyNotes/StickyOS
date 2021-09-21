@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StickyOS">
         <activity
+            android:name=".AppAssistant"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
