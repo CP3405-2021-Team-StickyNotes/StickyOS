@@ -14,13 +14,15 @@
         android:layout_marginBottom="20dp">
 
         <Button
+            android:id="@+id/month_navigation_previous"
             android:layout_width="0dp"
+            android:onClick="previousMonthAction"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="back"
+            android:text="@string/back"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:textSize="20sp">
+            android:textSize="10sp">
         </Button>
 
         <TextView
@@ -32,18 +34,19 @@
             android:textSize="20sp"
             android:textAlignment="center"
             android:textStyle="bold"
-            android:text="September 2021">
+            android:text="@string/september_2021">
         </TextView>
 
         <Button
+            android:id="@+id/month_navigation_next"
+            android:onClick="nextMonthAction"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="foward"
-
+            android:text="@string/foward"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:textSize="20sp">
+            android:textSize="10sp">
         </Button>
 
     </LinearLayout>
@@ -121,6 +124,10 @@
 
     </LinearLayout>
 
-
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/calanderRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>
