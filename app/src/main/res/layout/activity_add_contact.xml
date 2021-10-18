@@ -7,4 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".AddContact">
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="393dp"
+      android:layout_height="46dp"
+      android:text="Phone"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="11dp"
+      tools:layout_editor_absoluteY="22dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

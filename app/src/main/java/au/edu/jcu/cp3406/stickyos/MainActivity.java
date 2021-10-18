@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -23,10 +24,25 @@ public class MainActivity extends AppCompatActivity {
                 openActivity2();
             }
         });
+
+        button = (Button) findViewById(R.id.button1);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity3();
+            }
+        });
     }
+
+
 
     public void openActivity2() {
         Intent intent = new Intent(this, Contacts.class);
+        startActivity(intent);
+    }
+
+    public void openActivity3() {
+        Intent intent = new Intent(this, ContactsMain.class);
         startActivity(intent);
     }
 }
