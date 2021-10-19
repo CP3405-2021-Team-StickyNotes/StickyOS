@@ -21,39 +21,20 @@ public class ContactsMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contactsmain);
 
+        androidImageButton = (ImageButton) findViewById(R.id.plus1);
+        androidImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity3();
+            }
+        });
+
+
     }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.appmenu, menu);
-        return true;
+    public void openActivity3() {
+        Intent intent = new Intent(this, AddContact.class);
+        startActivity(intent);
     }
-
-
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        switch (item.getItemId()) {
-//            case R.id.item1:
-//                Toast.makeText(this, "Item 1 selected", Toast.LENGTH_SHORT).show();
-//                return true;
-//            case R.id.item2:
-//                Toast.makeText(this, "Item 2 selected", Toast.LENGTH_SHORT).show();
-//                return true;
-//            case R.id.item3:
-//                Toast.makeText(this, "Item 3 selected", Toast.LENGTH_SHORT).show();
-//                return true;
-//            case R.id.subitem1:
-//                Toast.makeText(this, "Sub Item 1 selected", Toast.LENGTH_SHORT).show();
-//                return true;
-//            case R.id.subitem2:
-//                Toast.makeText(this, "Sub Item 2 selected", Toast.LENGTH_SHORT).show();
-//                return true;
-//            default:
-//                return super.onOptionsItemSelected(item);
-//        }
-//    }
-
 
 
 }
