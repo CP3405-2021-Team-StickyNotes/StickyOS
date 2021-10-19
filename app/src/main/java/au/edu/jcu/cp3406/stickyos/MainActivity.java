@@ -6,6 +6,8 @@ import androidx.fragment.app.DialogFragment;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,4 +25,17 @@ public class MainActivity extends AppCompatActivity {
     public void addAlarm(View view) {
 
     }
+
+    public void openClock(View view){
+
+        TextView titleText = findViewById(R.id.titleText);
+        titleText.setText("Clock");
+
+        LinearLayout parentLayout = findViewById(R.id.parentLayout);
+        parentLayout.setVisibility(View.INVISIBLE);
+
+
+    }
+
+
 }
