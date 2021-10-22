@@ -29,7 +29,6 @@ public class ContactsMain extends AppCompatActivity {
             }
         });
 
-
     }
     public void openActivity3() {
         Intent intent = new Intent(this, AddContact.class);
