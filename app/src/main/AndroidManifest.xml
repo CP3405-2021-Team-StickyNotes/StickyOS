@@ -10,6 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StickyOS">
         <activity
+            android:name=".ContactsActivityTest"
+            android:exported="true" />
+        <activity
+            android:name=".AppAssisstant"
+            android:exported="true"
+            android:label="@string/title_activity_app_assisstant"
+            android:theme="@style/Theme.StickyOS.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
