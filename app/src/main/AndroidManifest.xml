@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="au.edu.jcu.cp3406.stickyos">
+    package="au.edu.jcu.cp3406.stickyos" >
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.StickyOS">
+        android:theme="@style/Theme.StickyOS" >
+        <activity
+            android:name=".AddContact"
+            android:exported="true" />
+        <activity
+            android:name=".ContactsTutorial"
+            android:exported="true" />
+        <activity
+            android:name=".ContactsApp"
+            android:exported="true" />
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true">
