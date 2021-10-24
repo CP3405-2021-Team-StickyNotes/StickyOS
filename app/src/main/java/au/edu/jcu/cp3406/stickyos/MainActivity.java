@@ -2,9 +2,12 @@ package au.edu.jcu.cp3406.stickyos;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Button;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -111,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
         contactsImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                openContactsApp();
             }
         });
 
@@ -121,6 +124,18 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
             }
+
         });
+
+    }
+
+    public void openContactsApp() {
+        Intent intent = new Intent(this, ContactsApp.class);
+        startActivity(intent);
+    }
+
+    public void openContactsTutorial() {
+        Intent intent = new Intent(this, ContactsTutorial.class);
+        startActivity(intent);
     }
 }
