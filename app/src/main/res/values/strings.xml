@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">StickyOS</string>
+    <string name="camera">Camera</string>
+    <string name="photos">Photos</string>
+    <string name="calendar">Calendar</string>
+    <string name="contacts">Contacts</string>
+    <string name="clock">Clock</string>
+    <string name="app_assistant">App Assistant</string>
+    <string name="mail">Mail</string>
+    <string name="music">Music</string>
+    <string name="messages">Messages</string>
+    <string name="phone">Phone</string>
+    <string name="notes">Notes</string>
+    <string name="settings">Settings</string>
 </resources>

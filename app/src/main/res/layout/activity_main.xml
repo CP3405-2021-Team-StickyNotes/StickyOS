@@ -1,18 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/background_activity_main">
 
-    <TextView
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/round_corner" />
+
+    <TextClock
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/largeTextClock"
+        android:layout_below="@id/search_view"
+        android:textAlignment="center"
+        android:textColor="#C6C6C6"
+        android:textSize="50dp"
+        android:text="12:00"/>
+
+    <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/largeTextClock">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp">
+
+            <ImageButton
+                android:id="@+id/imageButtonCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/camera"
+                app:srcCompat="@drawable/icon_camera"
+                android:background="@drawable/round_corner"
+                android:layout_marginHorizontal="5dp"/>
+
+            <ImageButton
+                android:id="@+id/imageButtonPhotos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/photos"
+                app:srcCompat="@drawable/icon_pictures"
+                android:background="@drawable/round_corner"
+                android:layout_marginHorizontal="5dp"/>
+
+            <ImageButton
+                android:id="@+id/imageButtonClock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/icon_clock"
+                android:contentDescription="@string/clock"
+                android:background="@drawable/round_corner"
+                android:layout_marginHorizontal="5dp"/>
+
+            <ImageButton
+                android:id="@+id/imageButtonCalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/calendar"
+                app:srcCompat="@drawable/icon_calendar"
+                android:background="@drawable/round_corner"
+                android:layout_marginHorizontal="5dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imageButtonNotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/notes"
+                app:srcCompat="@drawable/icon_notes"
+                android:background="@drawable/round_corner"
+                android:layout_marginHorizontal="5dp"/>
+
+            <ImageButton
+                android:id="@+id/imageButtonMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/mail"
+                app:srcCompat="@drawable/icon_mailbox"
+                android:background="@drawable/round_corner"
+                android:layout_marginHorizontal="5dp"/>
+
+            <ImageButton
+                android:id="@+id/imageButtonAssistant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_assistant"
+                app:srcCompat="@drawable/icon_helping_hand"
+                android:background="@drawable/round_corner"
+                android:layout_marginHorizontal="5dp"/>
+
+            <ImageButton
+                android:id="@+id/imageButtonSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/settings"
+                app:srcCompat="@drawable/icon_settings"
+                android:background="@drawable/round_corner"
+                android:layout_marginHorizontal="5dp"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bottom_task_group">
+
+        <TableRow>
+
+            <ImageButton
+                android:id="@+id/imageButtonPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/phone"
+                app:srcCompat="@drawable/icon_phone"
+                android:background="@drawable/round_corner"
+                android:layout_marginHorizontal="5dp"/>
+
+            <ImageButton
+                android:id="@+id/imageButtonMessages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/messages"
+                app:srcCompat="@drawable/icon_messaging"
+                android:background="@drawable/round_corner"
+                android:layout_marginHorizontal="5dp"/>
+
+            <ImageButton
+                android:id="@+id/imageButtonContacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/contacts"
+                app:srcCompat="@drawable/icon_contacts"
+                android:background="@drawable/round_corner"
+                android:layout_marginHorizontal="5dp"/>
+
+            <ImageButton
+                android:id="@+id/imageButtonMusic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/music"
+                app:srcCompat="@drawable/icon_music"
+                android:background="@drawable/round_corner"
+                android:layout_marginHorizontal="5dp"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
