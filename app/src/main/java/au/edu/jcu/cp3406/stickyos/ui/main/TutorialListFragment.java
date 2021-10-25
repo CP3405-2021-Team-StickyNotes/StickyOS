@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import au.edu.jcu.cp3406.stickyos.ContactsActivityTest;
+import au.edu.jcu.cp3406.stickyos.ContactsTutorial;
 import au.edu.jcu.cp3406.stickyos.R;
 
 /**
@@ -72,27 +73,28 @@ public class TutorialListFragment extends Fragment {
         tuteTextContacts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent contactsIntent = new Intent(getActivity(), ContactsActivityTest.class);
+                Intent contactsIntent = new Intent(getActivity(), ContactsTutorial.class);
                 contactsIntent.putExtra("TutorialTrigger", 1);
                 startActivity(contactsIntent);
             }
         });
-        tuteTextCalender.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent calenderIntent = new Intent(getActivity(), ContactsActivityTest.class);
-                calenderIntent.putExtra("TutorialTrigger", 1);
-                startActivity(calenderIntent);
-            }
-        });
-        tuteTextClock.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent clockIntent = new Intent(getActivity(), ContactsActivityTest.class);
-                clockIntent.putExtra("TutorialTrigger", 1);
-                startActivity(clockIntent);
-            }
-        });
+
+/**        tuteTextCalender.setOnClickListener(new View.OnClickListener() {
+@Override public void onClick(View view) {
+Intent calenderIntent = new Intent(getActivity(), ContactsActivityTest.class);
+calenderIntent.putExtra("TutorialTrigger", 1);
+startActivity(calenderIntent);
+}
+});
+
+ tuteTextClock.setOnClickListener(new View.OnClickListener() {
+@Override public void onClick(View view) {
+Intent clockIntent = new Intent(getActivity(), ContactsActivityTest.class);
+clockIntent.putExtra("TutorialTrigger", 1);
+startActivity(clockIntent);
+}
+});
+ */
 
         return rootView;
     }

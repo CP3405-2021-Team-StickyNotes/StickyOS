@@ -18,32 +18,32 @@ public class DraggableFAB extends FloatingActionButton implements View.OnTouchLi
     private float downInputX, downInputY;
     private float dX, dY;
 
-    public DraggableFAB(Context context){
+    public DraggableFAB(Context context) {
         super(context);
         init();
     }
 
-    public DraggableFAB(Context context, AttributeSet attrs){
+    public DraggableFAB(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
     }
 
-    public DraggableFAB(Context context, AttributeSet attrs, int defStyleAttr){
+    public DraggableFAB(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init();
     }
 
-    private void init(){
+    private void init() {
         setOnTouchListener(this);
     }
 
     @Override
     public boolean onTouch(View view, MotionEvent motionEvent) {
 
-        ViewGroup.MarginLayoutParams layoutParams = (ViewGroup.MarginLayoutParams)view.getLayoutParams();
+        ViewGroup.MarginLayoutParams layoutParams = (ViewGroup.MarginLayoutParams) view.getLayoutParams();
 
         int action = motionEvent.getAction();
-        if (action == MotionEvent.ACTION_DOWN){
+        if (action == MotionEvent.ACTION_DOWN) {
 
             downInputX = motionEvent.getRawX();
             downInputY = motionEvent.getRawY();
@@ -52,13 +52,12 @@ public class DraggableFAB extends FloatingActionButton implements View.OnTouchLi
 
             return true;
 
-        }
-        else if (action == MotionEvent.ACTION_MOVE){
+        } else if (action == MotionEvent.ACTION_MOVE) {
 
             int viewWidth = view.getWidth();
             int viewHeight = view.getHeight();
 
-            View viewParent = (View)view.getParent();
+            View viewParent = (View) view.getParent();
             int parentWidth = viewParent.getWidth();
             int parentHeight = viewParent.getHeight();
 
@@ -78,8 +77,7 @@ public class DraggableFAB extends FloatingActionButton implements View.OnTouchLi
                     .start();
 
             return true;
-        }
-        else if (action == MotionEvent.ACTION_UP) {
+        } else if (action == MotionEvent.ACTION_UP) {
 
             float upRawX = motionEvent.getRawX();
             float upRawY = motionEvent.getRawY();
@@ -87,20 +85,18 @@ public class DraggableFAB extends FloatingActionButton implements View.OnTouchLi
             float upDX = upRawX - downInputX;
             float upDY = upRawY - downInputY;
 
-            if (Math.abs(upDX) < DRAG_TOLERANCE && Math.abs(upDY) < DRAG_TOLERANCE){
+            if (Math.abs(upDX) < DRAG_TOLERANCE && Math.abs(upDY) < DRAG_TOLERANCE) {
                 fabClicked();
                 return false;
-            }
-            else {
+            } else {
                 return true;
             }
-        }
-        else {
+        } else {
             return super.onTouchEvent(motionEvent);
         }
     }
 
-    public void fabClicked(){
+    public void fabClicked() {
         Toast.makeText(getContext(), "Test", Toast.LENGTH_SHORT).show();
     }
 }
