@@ -13,7 +13,6 @@ public class ContactsTutorial extends AppCompatActivity {
 
     ImageButton androidImageButton;
     private Button button;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

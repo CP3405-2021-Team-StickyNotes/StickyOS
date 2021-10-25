@@ -11,6 +11,7 @@ import gr.net.maroulis.library.EasySplashScreen;
 public class SplashScreenActivity extends AppCompatActivity {
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
