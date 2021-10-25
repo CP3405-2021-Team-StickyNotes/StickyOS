@@ -23,7 +23,7 @@
         android:textAlignment="center"
         android:textColor="#C6C6C6"
         android:textSize="50dp"
-        android:text="12:00"/>
+        android:text="12:00" />
 
     <TableLayout
         android:layout_width="wrap_content"
@@ -43,7 +43,7 @@
                 android:contentDescription="@string/camera"
                 app:srcCompat="@drawable/icon_camera"
                 android:background="@drawable/round_corner"
-                android:layout_marginHorizontal="5dp"/>
+                android:layout_marginHorizontal="5dp" />
 
             <ImageButton
                 android:id="@+id/imageButtonPhotos"
@@ -52,7 +52,7 @@
                 android:contentDescription="@string/photos"
                 app:srcCompat="@drawable/icon_pictures"
                 android:background="@drawable/round_corner"
-                android:layout_marginHorizontal="5dp"/>
+                android:layout_marginHorizontal="5dp" />
 
             <ImageButton
                 android:id="@+id/imageButtonClock"
@@ -61,7 +61,7 @@
                 app:srcCompat="@drawable/icon_clock"
                 android:contentDescription="@string/clock"
                 android:background="@drawable/round_corner"
-                android:layout_marginHorizontal="5dp"/>
+                android:layout_marginHorizontal="5dp" />
 
             <ImageButton
                 android:id="@+id/imageButtonCalendar"
@@ -70,7 +70,7 @@
                 android:contentDescription="@string/calendar"
                 app:srcCompat="@drawable/icon_calendar"
                 android:background="@drawable/round_corner"
-                android:layout_marginHorizontal="5dp"/>
+                android:layout_marginHorizontal="5dp" />
 
         </TableRow>
 
@@ -85,7 +85,7 @@
                 android:contentDescription="@string/notes"
                 app:srcCompat="@drawable/icon_notes"
                 android:background="@drawable/round_corner"
-                android:layout_marginHorizontal="5dp"/>
+                android:layout_marginHorizontal="5dp" />
 
             <ImageButton
                 android:id="@+id/imageButtonMail"
@@ -94,7 +94,7 @@
                 android:contentDescription="@string/mail"
                 app:srcCompat="@drawable/icon_mailbox"
                 android:background="@drawable/round_corner"
-                android:layout_marginHorizontal="5dp"/>
+                android:layout_marginHorizontal="5dp" />
 
             <ImageButton
                 android:id="@+id/imageButtonAssistant"
@@ -103,7 +103,7 @@
                 android:contentDescription="@string/app_assistant"
                 app:srcCompat="@drawable/icon_helping_hand"
                 android:background="@drawable/round_corner"
-                android:layout_marginHorizontal="5dp"/>
+                android:layout_marginHorizontal="5dp" />
 
             <ImageButton
                 android:id="@+id/imageButtonSettings"
@@ -112,7 +112,7 @@
                 android:contentDescription="@string/settings"
                 app:srcCompat="@drawable/icon_settings"
                 android:background="@drawable/round_corner"
-                android:layout_marginHorizontal="5dp"/>
+                android:layout_marginHorizontal="5dp" />
 
         </TableRow>
 
@@ -136,7 +136,7 @@
                 android:contentDescription="@string/phone"
                 app:srcCompat="@drawable/icon_phone"
                 android:background="@drawable/round_corner"
-                android:layout_marginHorizontal="5dp"/>
+                android:layout_marginHorizontal="5dp" />
 
             <ImageButton
                 android:id="@+id/imageButtonMessages"
@@ -145,7 +145,7 @@
                 android:contentDescription="@string/messages"
                 app:srcCompat="@drawable/icon_messaging"
                 android:background="@drawable/round_corner"
-                android:layout_marginHorizontal="5dp"/>
+                android:layout_marginHorizontal="5dp" />
 
             <ImageButton
                 android:id="@+id/imageButtonContacts"
@@ -154,7 +154,7 @@
                 android:contentDescription="@string/contacts"
                 app:srcCompat="@drawable/icon_contacts"
                 android:background="@drawable/round_corner"
-                android:layout_marginHorizontal="5dp"/>
+                android:layout_marginHorizontal="5dp" />
 
             <ImageButton
                 android:id="@+id/imageButtonMusic"
@@ -163,7 +163,7 @@
                 android:contentDescription="@string/music"
                 app:srcCompat="@drawable/icon_music"
                 android:background="@drawable/round_corner"
-                android:layout_marginHorizontal="5dp"/>
+                android:layout_marginHorizontal="5dp" />
 
         </TableRow>
 

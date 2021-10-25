@@ -12,8 +12,8 @@ public class ContactsActivityTest extends AppCompatActivity {
         setContentView(R.layout.activity_contacts_test);
 
         Bundle bundle = getIntent().getExtras();
-        if(bundle != null){
-            if(bundle.getString("TutorialTrigger") != null) {
+        if (bundle != null) {
+            if (bundle.getString("TutorialTrigger") != null) {
                 //Trigger Tutorial
             }
         }
