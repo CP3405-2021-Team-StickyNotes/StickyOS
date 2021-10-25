@@ -3,10 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/CMS/ContactsTest/ContactsApp/app/src/main/res/layout/activity_add_contact.xml" value="0.13020833333333334" />
-        <entry key="..\:/CMS/ContactsTest/ContactsApp/app/src/main/res/layout/activity_add_contact_tutorial.xml" value="0.13020833333333334" />
-        <entry key="..\:/CMS/ContactsTest/ContactsApp/app/src/main/res/layout/activity_contacts_app.xml" value="0.13020833333333334" />
-        <entry key="..\:/CMS/ContactsTest/ContactsApp/app/src/main/res/layout/activity_contacts_tutuorial.xml" value="0.13020833333333334" />
+        <entry key="..\:/Cntapp/ContactsApp/app/src/main/res/layout/activity_add_contact_tutorial.xml" value="0.1793478260869565" />
+        <entry key="..\:/Cntapp/ContactsApp/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
       </map>
     </option>
   </component>
