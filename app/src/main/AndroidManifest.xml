@@ -21,6 +21,10 @@
             android:name=".ContactsApp"
             android:exported="true" />
         <activity
+                android:name=".AppAssisstant"
+                android:exported="true"
+                android:label="@string/title_activity_app_assisstant"/>
+        <activity
             android:name=".SplashScreenActivity"
             android:exported="true">
             <intent-filter>
