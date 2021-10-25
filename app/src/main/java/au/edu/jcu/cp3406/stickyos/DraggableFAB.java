@@ -88,7 +88,7 @@ public class DraggableFAB extends FloatingActionButton implements View.OnTouchLi
             float upDY = upRawY - downInputY;
 
             if (Math.abs(upDX) < DRAG_TOLERANCE && Math.abs(upDY) < DRAG_TOLERANCE){
-                // Click here ?
+                fabClicked();
                 return false;
             }
             else {
@@ -98,5 +98,9 @@ public class DraggableFAB extends FloatingActionButton implements View.OnTouchLi
         else {
             return super.onTouchEvent(motionEvent);
         }
+    }
+
+    public void fabClicked(){
+        Toast.makeText(getContext(), "Test", Toast.LENGTH_SHORT).show();
     }
 }
