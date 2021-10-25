@@ -15,6 +15,8 @@
         <activity
             android:name=".ContactsTutorial"
             android:exported="true" />
+        <activity android:name=".AddContactsTutorial"
+            android:exported="true"/>
         <activity
             android:name=".ContactsApp"
             android:exported="true" />

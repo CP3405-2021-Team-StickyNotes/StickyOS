@@ -29,7 +29,7 @@ public class ContactsTutorial extends AppCompatActivity {
     }
 
     public void openActivity3() {
-        Intent intent = new Intent(this, AddContact.class);
+        Intent intent = new Intent(this, AddContactsTutorial.class);
         startActivity(intent);
     }
 }
