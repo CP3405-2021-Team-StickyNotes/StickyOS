@@ -13,10 +13,10 @@
             android:name=".AddContact"
             android:exported="true" />
         <activity
-            android:name=".Contacts"
+            android:name=".ContactsTutorial"
             android:exported="true" />
         <activity
-            android:name=".ContactsMain"
+            android:name=".ContactsApp"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
