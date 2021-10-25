@@ -13,6 +13,7 @@ public class ContactsApp extends AppCompatActivity {
 
     ImageButton androidImageButton;
     private Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +28,7 @@ public class ContactsApp extends AppCompatActivity {
         });
 
     }
+
     public void openActivity3() {
         Intent intent = new Intent(this, AddContact.class);
         startActivity(intent);

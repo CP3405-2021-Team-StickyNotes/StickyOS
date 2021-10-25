@@ -1,6 +1,7 @@
 package au.edu.jcu.cp3406.stickyos;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 
 public class AddContact extends AppCompatActivity {

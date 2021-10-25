@@ -6,106 +6,106 @@
     android:layout_height="match_parent">
 
 
-  <TextView
-      android:id="@+id/Name"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_alignParentStart="true"
-      android:layout_alignParentLeft="true"
-      android:layout_alignParentTop="true"
-      android:layout_marginStart="20dp"
-      android:layout_marginTop="20dp"
-      android:layout_marginEnd="20dp"
-      android:text="Name"
-      android:textSize="20sp" />
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Name"
+        android:textSize="20sp" />
 
-  <TextView
-      android:id="@+id/phoneView"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_below="@+id/Name"
-      android:layout_alignStart="@+id/Name"
-      android:layout_alignLeft="@+id/Name"
-      android:layout_marginTop="38dp"
-      android:text="Phone"
-      android:textSize="20sp" />
+    <TextView
+        android:id="@+id/phoneView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Name"
+        android:layout_alignStart="@+id/Name"
+        android:layout_alignLeft="@+id/Name"
+        android:layout_marginTop="38dp"
+        android:text="Phone"
+        android:textSize="20sp" />
 
-  <TextView
-      android:id="@+id/emailView"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_below="@+id/phoneView"
-      android:layout_alignStart="@+id/phoneView"
-      android:layout_alignLeft="@+id/phoneView"
-      android:layout_marginTop="38dp"
-      android:text="Email"
-      android:textSize="20sp" />
+    <TextView
+        android:id="@+id/emailView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneView"
+        android:layout_alignStart="@+id/phoneView"
+        android:layout_alignLeft="@+id/phoneView"
+        android:layout_marginTop="38dp"
+        android:text="Email"
+        android:textSize="20sp" />
 
 
-  <EditText
-      android:id="@+id/editName"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_alignStart="@+id/phoneInput"
-      android:layout_alignLeft="@+id/phoneInput"
-      android:layout_alignParentTop="true"
-      android:layout_alignParentEnd="true"
-      android:layout_alignParentRight="true"
-      android:ems="10"
-      android:hint="Enter Name"
-      android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/phoneInput"
+        android:layout_alignLeft="@+id/phoneInput"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName" />
 
-  <EditText
-      android:id="@+id/phoneInput"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_alignBottom="@+id/phoneView"
-      android:layout_alignParentEnd="true"
-      android:layout_alignParentRight="true"
-      android:ems="10"
-      android:hint="Enter number"
-      android:inputType="number"
-      tools:ignore="TextFields" />
+    <EditText
+        android:id="@+id/phoneInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/phoneView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="Enter number"
+        android:inputType="number"
+        tools:ignore="TextFields" />
 
-  <EditText
-      android:id="@+id/email"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_alignBottom="@+id/emailView"
-      android:layout_alignParentEnd="true"
-      android:layout_alignParentRight="true"
-      android:ems="10"
-      android:hint="Enter email" />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/emailView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="Enter email" />
 
-  <Button
-      android:id="@+id/buttonSubmit"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_below="@+id/phoneView"
-      android:layout_alignParentStart="true"
-      android:layout_alignParentLeft="true"
-      android:layout_marginStart="9dp"
-      android:layout_marginLeft="9dp"
-      android:layout_marginTop="91dp"
-      android:text="SUBMIT" />
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="91dp"
+        android:text="SUBMIT" />
 
-  <Button
-      android:id="@+id/buttonReset"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="RESET"
-      android:layout_alignBaseline="@+id/buttonSubmit"
-      android:layout_alignBottom="@+id/buttonSubmit"
-      android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:layout_alignBaseline="@+id/buttonSubmit"
+        android:layout_alignBottom="@+id/buttonSubmit"
+        android:layout_centerHorizontal="true" />
 
-  <TextView
-      android:id="@+id/tvResult"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_alignParentBottom="true"
-      android:layout_alignParentLeft="true"
-      android:layout_alignParentStart="true"
-      android:layout_marginBottom="143dp"
-      android:textSize="30sp" />
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="143dp"
+        android:textSize="30sp" />
 
 </RelativeLayout>

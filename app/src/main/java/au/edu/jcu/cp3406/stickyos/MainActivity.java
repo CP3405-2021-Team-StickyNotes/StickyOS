@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         appAssistantImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                openAppAssistant();
             }
         });
 
@@ -123,6 +123,11 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    public void openAppAssistant() {
+        Intent intent = new Intent(this, AppAssisstant.class);
+        startActivity(intent);
     }
 
     public void openContactsApp() {
