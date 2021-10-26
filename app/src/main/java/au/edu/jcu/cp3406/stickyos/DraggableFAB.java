@@ -1,6 +1,7 @@
 package au.edu.jcu.cp3406.stickyos;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -17,6 +18,7 @@ public class DraggableFAB extends FloatingActionButton implements View.OnTouchLi
 
     private float downInputX, downInputY;
     private float dX, dY;
+    private Intent intent;
 
     public DraggableFAB(Context context) {
         super(context);
@@ -96,7 +98,12 @@ public class DraggableFAB extends FloatingActionButton implements View.OnTouchLi
         }
     }
 
+    public void setIntent (Intent intent) {
+        this.intent = intent;
+    }
     public void fabClicked() {
-        Toast.makeText(getContext(), "Test", Toast.LENGTH_SHORT).show();
+        if (this.intent != null) {
+            getContext().startActivity(this.intent);
+        }
     }
 }

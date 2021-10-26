@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton messagesImageButton;
     ImageButton contactsImageButton;
     ImageButton musicImageButton;
+    DraggableFAB mainFloater;
 
 
     @Override
@@ -123,6 +124,11 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        mainFloater = (DraggableFAB) findViewById(R.id.help_button);
+        Intent helpIntent = new Intent(this, AppAssisstant.class);
+        mainFloater.setIntent(helpIntent);
+
     }
 
     public void openAppAssistant() {

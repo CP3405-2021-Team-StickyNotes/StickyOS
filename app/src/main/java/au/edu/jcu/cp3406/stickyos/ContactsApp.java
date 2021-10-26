@@ -12,6 +12,7 @@ import android.widget.ImageButton;
 public class ContactsApp extends AppCompatActivity {
 
     ImageButton androidImageButton;
+    DraggableFAB contactsFloater;
     private Button button;
 
     @Override
@@ -26,6 +27,10 @@ public class ContactsApp extends AppCompatActivity {
                 openActivity3();
             }
         });
+
+        contactsFloater = (DraggableFAB) findViewById(R.id.help_button);
+        Intent helpIntent = new Intent(this, ContactsTutorial.class);
+        contactsFloater.setIntent(helpIntent);
 
     }
 
