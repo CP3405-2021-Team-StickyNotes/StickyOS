@@ -11,8 +11,8 @@
         android:id="@+id/addContact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="260dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="15dp"
         android:scaleType="centerInside"
         android:src="@drawable/plus"
         app:srcCompat="@android:drawable/btn_dialog" />

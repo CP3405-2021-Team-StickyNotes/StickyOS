@@ -23,6 +23,7 @@ public class CalendarActivity extends AppCompatActivity implements CalendarAdapt
     private TextView monthYearText;
     private RecyclerView calendarRecyclerView;
     private LocalDate selectedDate;
+    private DraggableFAB calendarFAB;
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
@@ -37,7 +38,8 @@ public class CalendarActivity extends AppCompatActivity implements CalendarAdapt
     private void initWidgets() {
         calendarRecyclerView = findViewById(R.id.calanderRecycler);
         monthYearText = findViewById(R.id.monthYearTextView);
-
+        calendarFAB = findViewById(R.id.calendar_help);
+        // Add Intent Here
     }
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void setMonthView() {
