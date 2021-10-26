@@ -20,6 +20,15 @@
             android:exported="true" />
         <activity
             android:name=".ContactsApp"
+            android:exported="true"/>
+        <activity
+            android:name=".CalendarTutorialActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".CalendarTutorialActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SelectedDateActivity"
             android:exported="true" />
         <activity
             android:name=".AppAssisstant"
@@ -27,9 +36,6 @@
             android:label="@string/title_activity_app_assisstant" />
         <activity
             android:name=".CalendarActivity"
-            android:exported="true" />
-        <activity
-            android:name=".SelectedDateActivity"
             android:exported="true" />
         <activity
             android:name=".SplashScreenActivity"
