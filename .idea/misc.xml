@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/corey/AndroidStudioProjects/StickyOS/app/src/main/res/layout/activity_add_contact_tutorial.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/corey/AndroidStudioProjects/StickyOS/app/src/main/res/layout/activity_calendar.xml" value="0.1265625" />
+        <entry key="..\:/Users/corey/AndroidStudioProjects/StickyOS/app/src/main/res/layout/activity_contacts_tutuorial.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/corey/AndroidStudioProjects/StickyOS/app/src/main/res/layout/activity_floating_button2.xml" value="0.264" />
+        <entry key="..\:/Users/corey/AndroidStudioProjects/StickyOS/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/corey/AndroidStudioProjects/StickyOS/app/src/main/res/layout/activity_selected_date_activity.xml" value="0.1265625" />
       </map>
     </option>
