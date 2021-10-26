@@ -39,7 +39,8 @@ public class CalendarActivity extends AppCompatActivity implements CalendarAdapt
         calendarRecyclerView = findViewById(R.id.calanderRecycler);
         monthYearText = findViewById(R.id.monthYearTextView);
         calendarFAB = findViewById(R.id.calendar_help);
-        // Add Intent Here
+        Intent helpIntent = new Intent(this, CalendarTutorialActivity.class);
+        calendarFAB.setIntent(helpIntent);
     }
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void setMonthView() {
