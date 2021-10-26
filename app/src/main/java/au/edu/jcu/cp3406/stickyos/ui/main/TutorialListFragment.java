@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import au.edu.jcu.cp3406.stickyos.CalendarActivity;
 import au.edu.jcu.cp3406.stickyos.ContactsActivityTest;
 import au.edu.jcu.cp3406.stickyos.ContactsTutorial;
 import au.edu.jcu.cp3406.stickyos.R;
@@ -79,22 +80,16 @@ public class TutorialListFragment extends Fragment {
             }
         });
 
-/**        tuteTextCalender.setOnClickListener(new View.OnClickListener() {
-@Override public void onClick(View view) {
-Intent calenderIntent = new Intent(getActivity(), ContactsActivityTest.class);
-calenderIntent.putExtra("TutorialTrigger", 1);
-startActivity(calenderIntent);
-}
-});
+        tuteTextCalender.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent contactsIntent = new Intent(getActivity(), CalendarActivity.class);
+                contactsIntent.putExtra("TutorialTrigger", 1);
+                startActivity(contactsIntent);
+            }
+        });
 
- tuteTextClock.setOnClickListener(new View.OnClickListener() {
-@Override public void onClick(View view) {
-Intent clockIntent = new Intent(getActivity(), ContactsActivityTest.class);
-clockIntent.putExtra("TutorialTrigger", 1);
-startActivity(clockIntent);
-}
-});
- */
+
 
         return rootView;
     }

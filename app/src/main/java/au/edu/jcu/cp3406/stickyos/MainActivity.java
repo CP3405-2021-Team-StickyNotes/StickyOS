@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         calendarImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                openCalendarApp();
             }
         });
 
@@ -138,6 +138,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openContactsApp() {
         Intent intent = new Intent(this, ContactsApp.class);
+        startActivity(intent);
+    }
+
+    public void openCalendarApp(){
+        Intent intent = new Intent(this, CalendarActivity.class);
         startActivity(intent);
     }
 }
