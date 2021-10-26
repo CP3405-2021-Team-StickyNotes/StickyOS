@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StickyOS">
         <activity
+            android:name=".CalendarTutorialActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".CalendarTutorialActivity"
+            android:exported="true" />
+        <activity
             android:name=".SelectedDateActivity"
             android:exported="true" />
         <activity
